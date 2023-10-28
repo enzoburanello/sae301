@@ -1,0 +1,14 @@
+{
+  "name": "sae-301",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:w": "sass -w src/main.scss:dist/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.4"
+  }
+}
