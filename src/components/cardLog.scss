@@ -1,0 +1,229 @@
+:root {
+    --dark: #{$neutral-neutral-1000};
+    --white: #{$neutral-neutral-100};
+    --soft-orange: #{$secondary-secondary100};
+    --orange: #{$secondary-secondary500};
+    --arial: #{$font-family-arial};
+    --courier: #{$font-family-courier};
+    --brown: #{$secondary-secondary900};
+    --soft-orange-2:#{ $secondary-secondary200};
+    --secondary-400: #{$secondary-secondary400};
+    --primary-600: #{$primary-primary600};
+    --neutral-600: #{$neutral-neutral-600};
+
+    --Arial-typo: var(--arial);
+    --Courier-typo: var(--courier);
+    --white-typo: var(--white);
+    --dark-typo: var(--dark);
+    --bg-card: var(--soft-orange);
+    --btn-color: var(--orange);
+    --btn-hover: var(--brown);
+    --hover-text: var(--soft-orange-2);
+    --nav-btn: var(--secondary-400);
+    --nav-ancre-hover: var(--primary-600);
+    --nav-ancre: var(--neutral-600);
+  }
+
+.cardLog{
+    margin: 10px;
+    
+    padding:  24px;
+    width: 350px;
+    background-color: var(--soft-orange);
+    border-radius: 20px;
+    color: var(--brown);
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+    }
+    &__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:12px ;
+        text-align: center;
+        gap: 30px;
+        font-family: var(--Arial-typo);
+    }
+    &__title{
+        font-size: 32px;
+    }
+    &__subtitle{
+        font-size: 16px;
+    }
+
+    &__main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        
+    }
+    &__tiny{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        gap: 30px;
+        font-family: var(--arial);
+        font-size: 12px;
+
+    }
+    &__remember{
+        display: flex;
+        flex-direction: row;
+    }
+    &__bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    &__buton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    &__title-mail{
+        font-family: var(--Arial-typo);
+        font-size: 14px ;
+    }
+    &__input-mail{
+        height: 30px;
+        width: 180px;
+        padding: 10px;
+        font-family: var(--Arial-typo);
+        font-size: 14px ;
+        border-radius: 10px;
+        border:  none;
+    }
+    &__input-pwd{
+        margin-bottom:15px ;
+        height: 30px;
+        width: 180px;
+        padding: 10px;
+        font-family: var(--Arial-typo);
+        font-size: 14px ;
+
+        font-family: var(--Arial-typo);
+        font-size: 14px ;
+        border-radius: 10px;
+        border:  none;
+
+    }
+    &__title-pwd{
+        font-family: var(--Arial-typo);
+        font-size: 14px ;
+    }
+    &__btn-google{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        font-family: var(--arial);
+        text-transform: uppercase;
+        font-weight: bold ;
+        font-size: 14px;
+        background-color: var(--white);
+        height: 40px;
+        width: 300px;
+        border-radius: 10px;
+
+    }
+    &__btn-facebook{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        font-family: var(--arial);
+        text-transform: uppercase;
+        font-weight: bold ;
+        font-size: 14px;
+        background-color: var(--white);
+        height: 40px;
+        width: 300px;
+        border-radius: 10px;
+        
+    }
+    &__btn-facebook:hover{
+        background-color: var(--dark);
+        color: var(--white);
+    }
+    &__btn-google:hover{
+        background-color: var(--dark);
+        color: var(--white);
+        svg{
+            fill: var(--white);
+
+        }
+    }
+    &__btn-log{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        font-family: var(--arial);
+        text-transform: uppercase;
+        font-size: 14px;
+        background-color: var(--white);
+        height: 40px;
+        width: 300px;
+        border-radius: 10px;
+
+    }
+
+    &__btn-log:hover{
+        color:var(--primary-600);
+    }
+
+    &__tiny-text{
+        font-family: var(--Arial-typo);
+        font-size: 12px;
+    }
+
+    @media (min-width:700px) {
+        width: 552px;
+        &__main{
+            width: 100% ;
+            gap: 30px;
+        }
+        &__tiny{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+        &__input-mail{
+            width: 390px;
+        }
+        &__input-pwd{
+            width: 390px;
+        }
+        &__title{
+            font-size: 36px;
+        }
+        &__subtitle{
+            font-size: 20px;
+        }
+        &__mail{
+            font-size: 16px;
+        }
+        &__pwd{
+            font-size: 16px;
+        }
+    }
+
+}

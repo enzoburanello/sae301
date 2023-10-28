@@ -1,0 +1,50 @@
+:root {
+    --dark: #{$neutral-neutral-1000};
+    --white: #{$neutral-neutral-100};
+    --soft-orange: #{$secondary-secondary100};
+    --orange: #{$secondary-secondary500};
+    --arial: #{$font-family-arial};
+    --courier: #{$font-family-courier};
+    --brown: #{$secondary-secondary900};
+    --soft-orange-2:#{ $secondary-secondary200};
+
+    --Arial-typo: var(--arial);
+    --Courier-typo: var(--courier);
+    --white-typo: var(--white);
+    --dark-typo: var(--dark);
+    --bg-card: var(--soft-orange);
+    --btn-color: var(--orange);
+    --btn-hover: var(--brown);
+    --hover-text: var(--soft-orange-2)
+  }
+
+
+  .search{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem;
+    background-color: var(--bg-card);
+    padding: 2rem 4rem 2rem 4rem;
+    border-radius: 1rem;
+    box-shadow: 9px 32px 39px -24px rgba(157,157,157,0.44);
+    &__title{
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text{
+        font-size: 1rem;
+        font-family: sans-serif;
+    }
+    @media (max-width: 720px) {
+        margin: 2.5rem;
+        padding: 1rem 2rem 1rem 2rem;
+        &__text{
+          font-size: 0.5rem;
+        }
+        &__svg{
+          width: 1rem;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+:root {
+    --dark: #{$neutral-neutral-1000};
+    --white: #{$neutral-neutral-100};
+    --soft-orange: #{$secondary-secondary100};
+    --orange: #{$secondary-secondary500};
+    --arial: #{$font-family-arial};
+    --courier: #{$font-family-courier};
+    --brown: #{$secondary-secondary900};
+    --soft-orange-2:#{ $secondary-secondary200};
+    --secondary-400: #{$secondary-secondary400};
+    --primary-600: #{$primary-primary600};
+    --neutral-600: #{$neutral-neutral-600};
+
+    --Arial-typo: var(--arial);
+    --Courier-typo: var(--courier);
+    --white-typo: var(--white);
+    --dark-typo: var(--dark);
+    --bg-card: var(--soft-orange);
+    --btn-color: var(--orange);
+    --btn-hover: var(--brown);
+    --hover-text: var(--soft-orange-2);
+    --nav-btn: var(--secondary-400);
+    --nav-ancre-hover: var(--primary-600);
+    --nav-ancre: var(--neutral-600);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin nav-btn-style($bgColor: var(--nav-btn), $font: var(--Arial-typo), $textColor: var(--typo-white), $iconFill: var(--nav-ancre)) {
+    display: flex;
+    justify-content: center;
+    background-color: $bgColor;
+    font-family: $font;
+    font-weight: 600;
+    color: $textColor;
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    gap: 1rem;
+    border-radius: 3rem;
+    fill: $iconFill;
+  }
+
+
+  @mixin btn-style-card($textColor: var(--white), $bgColor: var(--orange), $hoverTextColor: var(--btn-hover), $hoverBgColor: var(--hover-text)) {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    color: $textColor;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: $bgColor;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  
+    &:hover {
+      color: $hoverTextColor;
+      background-color: $hoverBgColor;
+      fill: $hoverBgColor;
+    }
+  }
+
+  @mixin btn-style-card-media-queries($textColor: var(--white), $bgColor: var(--orange), $hoverTextColor: var(--btn-hover), $hoverBgColor: var(--hover-text)) {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    color: $textColor;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: $bgColor;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    font-size: 0.5rem;
+  
+    &:hover {
+      color: $hoverTextColor;
+      background-color: $hoverBgColor;
+      fill: $hoverBgColor;
+    }
+  }
+
+
+
+  @mixin btn-style-card-Ingredients($textColor: var(--white), $bgColor: var(--orange), $hoverTextColor: var(--btn-hover), $hoverBgColor: var(--hover-text)) {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    color: $hoverTextColor;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: $hoverBgColor
+    $hoverBgColor;
+    padding: 0.75rem;
+    border-radius: 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  
+    &:hover {
+      color: $textColor;
+      background-color: $bgColor;
+      fill: $bgColor;
+    }
+  }

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Josefin+Sans:ital,wght@0,200;0,300;0,700;1,700&family=Space+Mono:wght@400;700&display=swap");
+:root {
+  --dark: hsl(0, 1%, 0%);
+  --white: hsl(0, 1%, 100%);
+  --soft-orange: hsl(28, 97%, 97%);
+  --orange: hsl(28, 85%, 65%);
+  --arial: Arial, sans-serif;
+  --courier: Courier Prime, monospace;
+  --brown: hsl(28, 84%, 23%);
+  --soft-orange-2:hsl(28, 99%, 90%);
+  --secondary-400: hsl(28, 100%, 76%);
+  --primary-600: hsl(231, 80%, 58%);
+  --neutral-600: hsl(0, 1%, 50%);
+  --secondary-1000: hsl(28, 98%, 14%);
+  --Arial-typo: var(--arial);
+  --Courier-typo: var(--courier);
+  --brown-text: var(--secondary-1000);
+  --white-typo: var(--white);
+  --dark-typo: var(--dark);
+  --bg-card: var(--soft-orange);
+  --btn-color: var(--orange);
+  --btn-hover: var(--brown);
+  --hover-text: var(--soft-orange-2);
+  --nav-btn: var(--secondary-400);
+  --nav-ancre-hover: var(--primary-600);
+  --nav-ancre: var(--neutral-600);
+}
+
+:root {
+  --clr-neutral-100: hsl(0, 1%, 100%);
+  --clr-neutral-200: hsl(0, 1%, 90%);
+  --clr-neutral-300: hsl(0, 1%, 80%);
+  --clr-neutral-400: hsl(0, 1%, 70%);
+  --clr-neutral-500: hsl(0, 1%, 60%);
+  --clr-neutral-600: hsl(0, 1%, 50%);
+  --clr-neutral-700: hsl(0, 1%, 40%);
+  --clr-neutral-800: hsl(0, 1%, 30%);
+  --clr-neutral-900: hsl(0, 1%, 20%);
+  --clr-neutral-1000: hsl(0, 1%, 0%);
+  --clr-primary-100: hsl(231, 97%, 97%);
+  --clr-primary-200: hsl(231, 99%, 89%);
+  --clr-primary-300: hsl(231, 99%, 82%);
+  --clr-primary-400: hsl(231, 100%, 74%);
+  --clr-primary-500: hsl(231, 100%, 67%);
+  --clr-primary-600: hsl(231, 80%, 58%);
+  --clr-primary-700: hsl(231, 68%, 47%);
+  --clr-primary-800: hsl(231, 78%, 36%);
+  --clr-primary-900: hsl(231, 91%, 27%);
+  --clr-primary-1000: hsl(231, 100%, 19%);
+  --clr-secondary-100: hsl(28, 97%, 97%);
+  --clr-secondary-200: hsl(28, 99%, 90%);
+  --clr-secondary-300: hsl(28, 99%, 83%);
+  --clr-secondary-400: hsl(28, 100%, 76%);
+  --clr-secondary-500: hsl(28, 85%, 65%);
+  --clr-secondary-600: hsl(28, 61%, 53%);
+  --clr-secondary-700: hsl(28, 63%, 42%);
+  --clr-secondary-800: hsl(28, 73%, 32%);
+  --clr-secondary-900: hsl(28, 84%, 23%);
+  --clr-secondary-1000: hsl(28, 98%, 14%);
+  --ff-arial: Arial, sans-serif;
+  --ff-courier: Courier Prime, monospace;
+}/*# sourceMappingURL=variables.css.map */

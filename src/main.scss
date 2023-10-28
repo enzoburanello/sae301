@@ -1,0 +1,24 @@
+@import 'variables/variables';
+@import 'mixins/mixins';    
+@import 'reset/reset';      
+@import 'components/card';
+@import 'components/nav_location';
+@import 'components/nav';
+@import 'components/engagement';
+@import 'components/footer';
+@import 'components/card-location';
+@import 'components/CardIngredients';
+@import 'components/cardPanier.scss';
+@import'components/cardValidation';
+@import'components/historyCard';
+@import'components/cardLog';
+@import'components/cartEmpty';
+@import'components/historyEmpty';
+
+
+
+.teste{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

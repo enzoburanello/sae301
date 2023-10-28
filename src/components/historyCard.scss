@@ -1,0 +1,118 @@
+:root {
+    --dark: #{$neutral-neutral-1000};
+    --white: #{$neutral-neutral-100};
+    --soft-orange: #{$secondary-secondary100};
+    --orange: #{$secondary-secondary500};
+    --arial: #{$font-family-arial};
+    --courier: #{$font-family-courier};
+    --brown: #{$secondary-secondary900};
+    --soft-orange-2:#{ $secondary-secondary200};
+    --secondary-400: #{$secondary-secondary400};
+    --primary-600: #{$primary-primary600};
+    --neutral-600: #{$neutral-neutral-600};
+
+    --Arial-typo: var(--arial);
+    --Courier-typo: var(--courier);
+    --white-typo: var(--white);
+    --dark-typo: var(--dark);
+    --bg-card: var(--soft-orange);
+    --btn-color: var(--orange);
+    --btn-hover: var(--brown);
+    --hover-text: var(--soft-orange-2);
+    --nav-btn: var(--secondary-400);
+    --nav-ancre-hover: var(--primary-600);
+    --nav-ancre: var(--neutral-600);
+  }
+
+body{
+    background-color: grey;
+}
+
+
+.historyCard{
+    margin: 10px;
+ 
+
+
+    
+    width: fit-content;
+    
+    background-color: var(--white);
+    border-radius: 10px;
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 58.125rem;
+        padding: 3.125rem;
+
+    }
+
+    &__main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 1.25rem;
+    }
+    &__name{
+        font-family: var(--Arial-typo);
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__count{
+        font-family: var(--Arial-typo);
+        font-size: 20px;
+        font-weight: bold;
+    }
+    &__date{
+        font-family: var(--Arial-typo);
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    @media (max-width:700px)  {
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 20rem;
+            padding: 10px 20px;
+
+            gap: 2.5rem;
+            
+        }
+        &__main{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__info{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        &__name{
+            font-size: 20px;
+
+        }
+        &__count{
+            font-size: 24px;
+        }
+        &__date{
+            font-size: 20px;
+        }
+    }
+
+}

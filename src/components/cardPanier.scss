@@ -1,0 +1,138 @@
+
+:root {
+    --dark: #{$neutral-neutral-1000};
+    --white: #{$neutral-neutral-100};
+    --soft-orange: #{$secondary-secondary100};
+    --orange: #{$secondary-secondary500};
+    --arial: #{$font-family-arial};
+    --courier: #{$font-family-courier};
+    --brown: #{$secondary-secondary900};
+    --soft-orange-2:#{ $secondary-secondary200};
+    --secondary-400: #{$secondary-secondary400};
+    --primary-600: #{$primary-primary600};
+    --neutral-600: #{$neutral-neutral-600};
+    --secondary-1000: #{$secondary-secondary1000};
+
+    --Arial-typo: var(--arial);
+    --Courier-typo: var(--courier);
+    --brown-text: var(--secondary-1000);
+    --white-typo: var(--white);
+    --dark-typo: var(--dark);
+    --bg-card: var(--soft-orange);
+    --btn-color: var(--orange);
+    --btn-hover: var(--brown);
+    --hover-text: var(--soft-orange-2);
+    --nav-btn: var(--secondary-400);
+    --nav-ancre-hover: var(--primary-600);
+    --nav-ancre: var(--neutral-600);
+  }
+
+
+
+  .cardPanier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-card);
+    padding: 2rem 6rem 2rem 6rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    &__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__li {
+        &:nth-child(3){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    &__img {
+        width: 6rem;
+    }
+
+    &__svg {
+     width: auto;
+    }
+
+    &__number {
+        font-family: var(--Arial-typo);
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    &__price {
+        font-family: var(--Arial-typo);
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    &__name {
+        font-family: var(--Arial-typo);
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    &__text {
+        font-family: var(--Arial-typo);
+        font-size: 1.25rem;
+    }
+
+    &__Btn {
+        @include btn-style-card();
+    }
+    @media (max-width: 720px) {
+        margin: auto;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        gap: 1rem;
+        &__number {
+            font-size: 0.75rem;
+        }
+        &__name {
+            font-size: 0.75rem;
+        }
+        &__svg {
+            width: 1rem;
+        }
+        &__left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        &__li {
+            &:nth-child(3){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.2rem;
+            }
+        }
+        &__price {
+            font-size: 0.75rem;
+        }
+        &__text {
+            font-family: var(--Arial-typo);
+            font-size: 0.5rem;
+        }
+        &__Btn {
+            font-size: 0.5rem;
+            padding: 1rem 0rem 1rem 0rem;
+        }
+        &__img {
+            width: 3rem;
+        }
+  }
+}

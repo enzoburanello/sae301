@@ -1,0 +1,154 @@
+
+:root {
+    --dark: #{$neutral-neutral-1000};
+    --white: #{$neutral-neutral-100};
+    --soft-orange: #{$secondary-secondary100};
+    --orange: #{$secondary-secondary500};
+    --arial: #{$font-family-arial};
+    --courier: #{$font-family-courier};
+    --brown: #{$secondary-secondary900};
+    --soft-orange-2:#{ $secondary-secondary200};
+    --secondary-400: #{$secondary-secondary400};
+    --primary-600: #{$primary-primary600};
+    --neutral-600: #{$neutral-neutral-600};
+    --secondary-1000: #{$secondary-secondary1000};
+
+    --Arial-typo: var(--arial);
+    --Courier-typo: var(--courier);
+    --brown-text: var(--secondary-1000);
+    --white-typo: var(--white);
+    --dark-typo: var(--dark);
+    --bg-card: var(--soft-orange);
+    --btn-color: var(--orange);
+    --btn-hover: var(--brown);
+    --hover-text: var(--soft-orange-2);
+    --nav-btn: var(--secondary-400);
+    --nav-ancre-hover: var(--primary-600);
+    --nav-ancre: var(--neutral-600);
+  }
+
+
+
+
+
+
+
+    .CardIngredients {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-card);
+        padding: 1.875rem;
+        width: 26rem;
+        gap: 2rem;
+        border-radius: 1.75rem;
+        margin: 5rem;
+        &__title {
+        font-family: var(--Arial-typo);
+        color: var(--brown-text);
+        font-size: 3.125rem;
+        }
+    
+        &__header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__ul {
+            display: flex;
+            gap: 0.3rem;
+        }
+        &__svg{
+            width: 1.25rem;
+        }
+
+        &__price {
+            font-family: var(--Arial-typo);
+            color: var(--brown-text);
+            font-weight: bolder;
+            font-size: 1.5rem;
+        }
+    
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    
+        &__title-2 {
+            font-family: var(--Arial-typo);
+            color: var(--brown-text);
+            font-weight: inherit;
+            font-size: 2rem;
+        }
+    
+        &__main {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 16rem;
+            margin-bottom: 2rem;
+        }
+    
+        &__liste {
+            font-family: var(--Arial-typo);
+            color: var(--brown-text);
+            font-weight: bold;
+            font-size: 1rem;
+        }
+    
+        &__footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+    
+        &__input {
+            display: flex;
+            gap: 5rem;
+            
+        }
+        &__contain{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+    
+        &__img {
+            width: 2rem;
+        }
+    
+        &__number {
+            font-family: var(--Arial-typo);
+            color: var(--brown-text);
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        @media (max-width: 720px) {
+            width: 13rem;
+            margin: auto;
+            &__price{
+                font-size: 0.75rem;
+
+            }
+            &__liste {
+                font-size: 0.5rem;
+            }
+            &__title-2 {
+                font-size: 1.25rem;
+            }
+            &__title {
+                font-size: 1.5rem;
+            }
+            &__svg{
+                width: 0.75rem;
+            }
+            &__img {
+                width: 1.5rem;
+            }
+            &__number {
+                font-size: 0.75rem;
+            }
+      }
+    }
